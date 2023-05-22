@@ -1,0 +1,73 @@
+<form name="frmContact" method="post" action="">
+
+    <div class="aler_message"><?php if(isset($message)) { echo $message; } ?></div>
+    
+    <table border="0" cellpadding="10" cellspacing="1" width="500" align="center">
+    <tr class="tableheader">
+    <td colspan="2">Contact Form</td>
+    </tr>
+    <tr class="tablerow">
+    <td>Full Name<br/>  <input type="text" class="text_input" autofocus="autofocus" name="fullname"></td>
+    <td>Email<br/> <input type="text" class="text_input" autofocus="autofocus" name="email"></td>
+    </tr>
+    <tr class="tablerow">
+    <td colspan="2">Message<br/><textarea name="user_message" class="text_input" autofocus="autofocus" cols="60" rows="6"></textarea></td>
+    </tr>
+    <tr class="tableheader">
+    <td colspan="2"><input type="submit" class="btn_submit" name="submit" value="Submit"></td>
+    </tr>
+    </table>
+    
+    </form>
+    <style>
+        table {
+	border:red 5px solid;
+}
+.table_data {
+    margin-left: 291px;
+    margin-top: 20px;
+} 
+.tableheader {
+	background-color: tan;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.tablerow {
+	background-color: tan;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.aler_message {
+	color: #FF0000;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+.text_input {
+	font-size: 18px;
+    border: blue 1px solid;
+    background: azure;
+    text-indent: 10px;
+}
+.btn_submit {
+    font-size: 18px;
+    width: 100px;
+    background: azure;
+    border: blue 1px solid;
+    padding: 6px;
+    border-radius: 8px;
+    color: blue;
+}
+.btn_submit:hover {
+    font-size: 18px;
+    width: 100px;
+    background: black;
+    border: red 1px solid;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+	cursor:pointer;
+}
+    </style>
